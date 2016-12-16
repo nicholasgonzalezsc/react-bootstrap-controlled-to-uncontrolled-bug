@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "preserveConstEnums": true,
+      "removeComments": false,
+      "allowSyntheticDefaultImports": true,
+      "target": "es5",
+      "module": "commonjs",
+      "jsx": "react"
+    },
+    "include": [
+      "views/*.tsx"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+}
