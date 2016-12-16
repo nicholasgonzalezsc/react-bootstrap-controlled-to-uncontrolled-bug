@@ -21,6 +21,10 @@ export default class ToUncontrolled extends React.PureComponent<{}, {}> {
           <Col xs={12}>
             <Button bsSize="lg" onClick={this.nextInterval}>Next Interval</Button>
           </Col>
+          <Col xs={12}>
+            <p><strong>Value:</strong> {typeof value !== 'undefined' ? JSON.stringify(value) : 'undefined'}</p>
+            <p><strong>Checked Value:</strong> {typeof checkedValue !== 'undefined' ? JSON.stringify(checkedValue) : 'undefined'}</p>
+          </Col>
         </Row>
       </Grid>
     );
@@ -44,8 +48,8 @@ export default class ToUncontrolled extends React.PureComponent<{}, {}> {
       });
     } else {
       this.setState({
-        value: undefined,
-        checkedValue: undefined,
+        value: null,
+        checkedValue: null,
         interval: interval + 1,
       });
     }

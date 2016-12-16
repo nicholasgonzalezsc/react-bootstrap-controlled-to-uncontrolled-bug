@@ -92,8 +92,8 @@ var ToUncontrolled = (function (_super) {
             }
             else {
                 _this.setState({
-                    value: undefined,
-                    checkedValue: undefined,
+                    value: null,
+                    checkedValue: null,
                     interval: interval + 1,
                 });
             }
@@ -107,7 +107,16 @@ var ToUncontrolled = (function (_super) {
                 React.createElement(react_bootstrap_1.Col, { xs: 12 },
                     React.createElement(Inputs_1.default, { value: value, checkedValue: checkedValue })),
                 React.createElement(react_bootstrap_1.Col, { xs: 12 },
-                    React.createElement(react_bootstrap_1.Button, { bsSize: "lg", onClick: this.nextInterval }, "Next Interval")))));
+                    React.createElement(react_bootstrap_1.Button, { bsSize: "lg", onClick: this.nextInterval }, "Next Interval")),
+                React.createElement(react_bootstrap_1.Col, { xs: 12 },
+                    React.createElement("p", null,
+                        React.createElement("strong", null, "Value:"),
+                        " ",
+                        typeof value !== 'undefined' ? JSON.stringify(value) : 'undefined'),
+                    React.createElement("p", null,
+                        React.createElement("strong", null, "Checked Value:"),
+                        " ",
+                        typeof checkedValue !== 'undefined' ? JSON.stringify(checkedValue) : 'undefined')))));
     };
     return ToUncontrolled;
 }(React.PureComponent));
