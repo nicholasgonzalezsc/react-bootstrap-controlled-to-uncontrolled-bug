@@ -7,4 +7,4 @@ To fix this requires having default values throughout the code, through ternary 
 or a wrapper around the input. The problem with this is that then you have to maintain all of these extra default values,
 and eventually remove them from items that would otherwise not have the default value fields saved on them.
 
-![reactbootstrapundefined](https://cloud.githubusercontent.com/assets/22032573/21275443/b60aba66-c381-11e6-85bf-d679d52a5325.gif)
+![reactbootstrapundefined](https://cloud.githubusercontent.com/assets/22032573/21275702/f98c582a-c382-11e6-96a7-aba926ebc451.gif)
